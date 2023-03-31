@@ -62,9 +62,6 @@ nav :nth-child(2):hover{
 .form{
     min-height: 70rem;
     width: 37rem;
-    /* border: 1px
-px
- solid red; */
     margin: auto;
     overflow: hidden;
     background: #fff;
@@ -193,10 +190,12 @@ px
 
 
 
-
 @media only screen and (max-width:767px){
     html{
-        font-size: 8px;
+        font-size: 9px;
+    }
+    .form{
+        min-height: 74rem;
     }
 }
 
