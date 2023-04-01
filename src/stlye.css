@@ -93,12 +93,19 @@ nav :nth-child(2):hover{
 
 .form .edit{
     height: 15rem;
-    width: 30rem;
+    width: 25rem;
     font-size: 2rem;
     margin: 31px auto;
     font-family: system-ui;
     border: 3px dotted gray;
     border-radius: 1rem;
+    line-height: 102px;
+}
+.edit::-webkit-file-upload-button {
+    visibility: hidden;
+}
+.edit::before {
+    content: 'تعديل صور العرض الرئيسية=';
 }
 .form .edit:focus{
     border: none;
@@ -126,10 +133,10 @@ nav :nth-child(2):hover{
     margin-top: 4rem;
 }
 
-.form .section div{
+.form .section .edit_two{
     float: right;
     height: 6.5rem;
-    width: 15rem;
+    width: 12.5rem;
     font-size: 2rem;
     /* margin: 0px auto; */
     margin-right: 1.5rem;
@@ -137,10 +144,14 @@ nav :nth-child(2):hover{
     border: 3px dotted gray;
     border-radius: 1rem;
 }
-
-.form .section div img{
-    height: 10rem;
+.edit_two::-webkit-file-upload-button {
+    visibility: hidden;
 }
+.edit_two::before {
+    content: 'اضف صوره ';
+}
+
+
 .footer{
     height: 13rem;
     width: 20rem;
@@ -187,6 +198,10 @@ nav :nth-child(2):hover{
     cursor: pointer;
     color: #EEE;
 }
+/* for delete defult style for input type"file" */
+input[type=file]::file-selector-button{
+    display: none;
+}
 
 
 
@@ -209,3 +224,11 @@ nav :nth-child(2):hover{
         font-size: 19px;
     }
 }
+
+
+
+
+
+
+
+/*ASkander*/
